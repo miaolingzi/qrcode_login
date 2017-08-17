@@ -6,7 +6,7 @@ import (
 	"github.com/skip2/go-qrcode"
 	"strings"
 	"github.com/satori/go.uuid"
-	//qrlogin "github.com/miaolingzi/qrcode_login"
+	//"github.com/miaolingzi/qrcode_login/qrdb"
 )
 
 var mAppID = "ifengfa7cf109aa3af1fa"
@@ -32,6 +32,7 @@ func qrcode_login(w http.ResponseWriter, r *http.Request) {
 		//todo appid参数错误
 	}
 	//todo 检查appid
+	//qrdb.isValidAppID(appid)
 	//产生uuid
 	uuid := uuid.NewV4().String()
 	mUUID_Map[appid] = uuid

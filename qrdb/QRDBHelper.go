@@ -30,7 +30,7 @@ func checkDBNull() {
 }
 
 /*************************************************AppID相关操作*******************************************************/
-func isValidAppID(appid string) bool {
+func IsValidAppID(appid string) bool {
 	checkDBNull()
 	query, _ := dbHelper.Query("SELECT * FROM APP WHERE appid = ?", appid)
 	defer query.Close()
@@ -62,18 +62,18 @@ func isValidAppID(appid string) bool {
 }
 
 /*************************************************UUID相关操作*******************************************************/
-func isValidUUID(uuid string) {
+func IsValidUUID(uuid string) {
 
 }
 
-func addUUID(uuid string) {
+func AddUUID(uuid string) {
 
 }
 
-func deleteUUID(uuid string) {
+func DeleteUUID(uuid string) {
 
 }
 
-func bindUUID(uuid string, user_id string) {
+func BindUUID(uuid string, user_id string) {
 
 }
